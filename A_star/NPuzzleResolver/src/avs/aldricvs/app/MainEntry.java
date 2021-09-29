@@ -9,7 +9,7 @@ public class MainEntry {
 		App app = new CliApp();
 
 		final int[][] initialLayout = {
-				{ 1, 4, 3 },
+				{ 4, 1, 3 },
 				{ 7, 2, 6 },
 				{ 5, 8, State.BLANK_BOX_VALUE }
 		};
