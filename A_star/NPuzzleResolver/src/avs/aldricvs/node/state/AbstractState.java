@@ -51,7 +51,8 @@ public abstract class AbstractState implements State {
 			for (int col = 0; col < size; col++) {
 				Position position = new Position(row, col);
 				int num = this.getNumberAt(position);
-				stringBuilder.append(num + " ");
+				// print nothing (if on the blank box) or the number
+				stringBuilder.append(num == State.BLANK_BOX_VALUE ? "  " : num + " ");
 			}
 			stringBuilder.append(System.lineSeparator());
 		}

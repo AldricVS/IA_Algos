@@ -8,8 +8,8 @@ public class MainEntry {
 
 		App app = new CliApp();
 
-		int[][] initialLayout = {
-				{ 4, 1, 3 },
+		final int[][] initialLayout = {
+				{ 1, 4, 3 },
 				{ 7, 2, 6 },
 				{ 5, 8, State.BLANK_BOX_VALUE }
 		};

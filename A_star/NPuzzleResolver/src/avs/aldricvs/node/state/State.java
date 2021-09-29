@@ -6,7 +6,7 @@ import avs.aldricvs.node.point.Position;
 
 public interface State {
 
-	public static final int BLANK_BOX_VALUE = 0;
+	public static final int BLANK_BOX_VALUE = -1;
 
 	public int getNumberAt(Position position);
 
@@ -27,5 +27,4 @@ public interface State {
 	 *         movement not possible
 	 */
 	public Optional<State> swapBlankBox(Direction direction);
-	// public
 }

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import avs.aldricvs.heuristic.HeuristicCalculator;
 import avs.aldricvs.node.state.Direction;
@@ -21,7 +22,9 @@ public class NodeImpl implements Node {
 
 	private HeuristicCalculator heuristicCalculator;
 
-	// null if root
+	/**
+	 *  null if root
+	 */
 	private Node parent;
 
 	public NodeImpl(State state, HeuristicCalculator heuristicCalculator, Node parent) {
@@ -37,13 +40,13 @@ public class NodeImpl implements Node {
 	public List<Node> generateChilds() {
 		return Arrays.stream(Direction.values())
 				.map(state::swapBlankBox)
-				.filter(Optional::isPresent) // TODO : is present / get is very ugly
-				.map(Optional::get)
+				.flatMap(s -> s.map(Stream::of).orElseGet(Stream::empty)) // convert stream of optional to "normal" stream
 				.filter(s -> !s.areSameState(parent == null ? null : parent.getState()))
 				.map(s -> new NodeImpl(s, heuristicCalculator, this))
 				.collect(Collectors.toList());
 	}
 	
+	@Override
 	public List<Node> findFullPath() {
 		if(parent == null) {
 			return List.of(this);

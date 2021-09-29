@@ -9,7 +9,6 @@ import avs.aldricvs.node.state.State;
 import avs.aldricvs.node.state.StateFactory;
 import avs.aldricvs.resolver.Resolver;
 import avs.aldricvs.resolver.ResolverImpl;
-import avs.aldricvs.resolver.exceptions.NoNodeFoundException;
 
 public class CliApp implements App {
 
@@ -27,7 +26,7 @@ public class CliApp implements App {
 		fullPath.forEach(this::printNodes);
 		System.out.println("Puzzle solved in " + node.getLevel() + " steps");
 	}
-	
+
 	private void showInsolvable() {
 		System.out.println("The puzzle cannot be solved...");
 	}

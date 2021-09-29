@@ -47,6 +47,7 @@ class IntArrayState extends AbstractState {
 			return Optional.empty();
 		}
 
+		// create a copy of the array
 		int[][] newState = Arrays.stream(state)
 				.map(int[]::clone)
 				.toArray(int[][]::new);
