@@ -3,8 +3,8 @@ package avs.aldricvs.node.state;
 import avs.aldricvs.node.point.Position;
 
 public enum Direction {
-	UP(new Position(1, 0)),
-	DOWN(new Position(-1, 0)),
+	UP(new Position(-1, 0)),
+	DOWN(new Position(1, 0)),
 	LEFT(new Position(0, -1)),
 	RIGHT(new Position(0, 1));
 
