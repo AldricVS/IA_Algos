@@ -25,8 +25,8 @@ public class ResolverImpl implements Resolver {
 	public Optional<Node> findBestPath() {
 		while (!openList.isEmpty()) {
 			Node cheapestNode = openList.stream()
-			        .min(Comparator.comparingInt(Node::getHeuristic))
-			        .orElseThrow(RuntimeException::new);
+					.min(Comparator.comparingInt(Node::getHeuristic))
+					.orElseThrow(RuntimeException::new);
 
 			if (cheapestNode.isEndState()) {
 				return Optional.of(cheapestNode);
@@ -36,17 +36,17 @@ public class ResolverImpl implements Resolver {
 			closedList.add(cheapestNode);
 
 			cheapestNode.generateChilds()
-			        .stream()
-			        .filter(this::hasAlreadyEncounteredThisState)
-			        .forEach(openList::add);
+					.stream()
+					.filter(this::hasNeverEncounteredThisState)
+					.forEach(openList::add);
 		}
 		// no solution found
 		return Optional.empty();
 	}
 
-	private boolean hasAlreadyEncounteredThisState(Node child) {
+	private boolean hasNeverEncounteredThisState(Node child) {
 		return closedList.stream()
-		        .map(Node::getState)
-		        .noneMatch(n -> n.areSameState(child.getState()));
+				.map(Node::getState)
+				.noneMatch(n -> n.areSameState(child.getState()));
 	}
 }
