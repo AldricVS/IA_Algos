@@ -1,8 +1,8 @@
-package avs.aldricvs.node.state;
+package main.java.avs.aldricvs.node.state;
 
 import java.util.Optional;
 
-import avs.aldricvs.node.point.Position;
+import main.java.avs.aldricvs.node.point.Position;
 
 public interface State {
 

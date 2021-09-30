@@ -1,4 +1,4 @@
-package avs.aldricvs.app;
+package main.java.avs.aldricvs.app;
 
 public interface App {
 	

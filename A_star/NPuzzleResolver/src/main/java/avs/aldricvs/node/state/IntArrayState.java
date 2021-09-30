@@ -1,10 +1,10 @@
-package avs.aldricvs.node.state;
+package main.java.avs.aldricvs.node.state;
 
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Optional;
 
-import avs.aldricvs.node.point.Position;
+import main.java.avs.aldricvs.node.point.Position;
 
 class IntArrayState extends AbstractState {
 

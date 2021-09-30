@@ -1,6 +1,6 @@
-package avs.aldricvs.node.state;
+package main.java.avs.aldricvs.node.state;
 
-import avs.aldricvs.node.point.Position;
+import main.java.avs.aldricvs.node.point.Position;
 
 public abstract class AbstractState implements State {
 

@@ -1,14 +1,14 @@
-package avs.aldricvs.app;
+package main.java.avs.aldricvs.app;
 
 import java.util.List;
 
-import avs.aldricvs.heuristic.HeuristicCalculator;
-import avs.aldricvs.heuristic.ManhattanDistanceHeuristicCalculator;
-import avs.aldricvs.node.Node;
-import avs.aldricvs.node.state.State;
-import avs.aldricvs.node.state.StateFactory;
-import avs.aldricvs.resolver.Resolver;
-import avs.aldricvs.resolver.ResolverImpl;
+import main.java.avs.aldricvs.heuristic.HeuristicCalculator;
+import main.java.avs.aldricvs.heuristic.ManhattanDistanceHeuristicCalculator;
+import main.java.avs.aldricvs.node.Node;
+import main.java.avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.node.state.StateFactory;
+import main.java.avs.aldricvs.resolver.Resolver;
+import main.java.avs.aldricvs.resolver.ResolverImpl;
 
 public class CliApp implements App {
 

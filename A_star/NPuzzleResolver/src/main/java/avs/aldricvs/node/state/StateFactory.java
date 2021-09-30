@@ -1,4 +1,4 @@
-package avs.aldricvs.node.state;
+package main.java.avs.aldricvs.node.state;
 
 public class StateFactory {
 	

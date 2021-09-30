@@ -1,4 +1,4 @@
-package avs.aldricvs.test.unit;
+package test.java.avs.aldricvs.unit;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

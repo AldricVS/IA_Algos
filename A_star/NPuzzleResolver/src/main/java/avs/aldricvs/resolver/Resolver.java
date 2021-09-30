@@ -1,8 +1,8 @@
-package avs.aldricvs.resolver;
+package main.java.avs.aldricvs.resolver;
 
 import java.util.Optional;
 
-import avs.aldricvs.node.Node;
+import main.java.avs.aldricvs.node.Node;
 
 public interface Resolver {
 	

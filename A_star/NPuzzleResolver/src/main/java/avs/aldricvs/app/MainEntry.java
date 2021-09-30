@@ -1,6 +1,6 @@
-package avs.aldricvs.app;
+package main.java.avs.aldricvs.app;
 
-import avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.node.state.State;
 
 public class MainEntry {
 

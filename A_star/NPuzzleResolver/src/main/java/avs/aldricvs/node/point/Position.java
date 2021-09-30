@@ -1,4 +1,4 @@
-package avs.aldricvs.node.point;
+package main.java.avs.aldricvs.node.point;
 
 public class Position {
 	

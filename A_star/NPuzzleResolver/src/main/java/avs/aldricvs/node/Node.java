@@ -1,9 +1,9 @@
-package avs.aldricvs.node;
+package main.java.avs.aldricvs.node;
 
 import java.util.List;
 import java.util.Optional;
 
-import avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.node.state.State;
 
 public interface Node {
 	

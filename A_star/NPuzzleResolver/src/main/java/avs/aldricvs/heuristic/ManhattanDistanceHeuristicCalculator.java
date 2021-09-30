@@ -1,7 +1,7 @@
-package avs.aldricvs.heuristic;
+package main.java.avs.aldricvs.heuristic;
 
-import avs.aldricvs.node.point.Position;
-import avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.node.point.Position;
+import main.java.avs.aldricvs.node.state.State;
 
 public class ManhattanDistanceHeuristicCalculator implements HeuristicCalculator {
 

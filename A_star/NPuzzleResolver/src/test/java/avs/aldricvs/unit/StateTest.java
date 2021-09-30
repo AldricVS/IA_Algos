@@ -1,4 +1,4 @@
-package avs.aldricvs.test.unit;
+package test.java.avs.aldricvs.unit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -8,10 +8,10 @@ import java.util.Optional;
 import org.junit.Before;
 import org.junit.Test;
 
-import avs.aldricvs.node.point.Position;
-import avs.aldricvs.node.state.Direction;
-import avs.aldricvs.node.state.State;
-import avs.aldricvs.node.state.StateFactory;
+import main.java.avs.aldricvs.node.point.Position;
+import main.java.avs.aldricvs.node.state.Direction;
+import main.java.avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.node.state.StateFactory;
 
 public class StateTest {
 

@@ -1,6 +1,6 @@
-package avs.aldricvs.heuristic;
+package main.java.avs.aldricvs.heuristic;
 
-import avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.node.state.State;
 
 @FunctionalInterface
 public interface HeuristicCalculator {

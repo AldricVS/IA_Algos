@@ -1,14 +1,14 @@
-package avs.aldricvs.resolver;
+package main.java.avs.aldricvs.resolver;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-import avs.aldricvs.heuristic.HeuristicCalculator;
-import avs.aldricvs.node.Node;
-import avs.aldricvs.node.NodeImpl;
-import avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.heuristic.HeuristicCalculator;
+import main.java.avs.aldricvs.node.Node;
+import main.java.avs.aldricvs.node.NodeImpl;
+import main.java.avs.aldricvs.node.state.State;
 
 public class ResolverImpl implements Resolver {
 

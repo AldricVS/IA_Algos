@@ -1,4 +1,4 @@
-package avs.aldricvs.node;
+package main.java.avs.aldricvs.node;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,9 +7,9 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import avs.aldricvs.heuristic.HeuristicCalculator;
-import avs.aldricvs.node.state.Direction;
-import avs.aldricvs.node.state.State;
+import main.java.avs.aldricvs.heuristic.HeuristicCalculator;
+import main.java.avs.aldricvs.node.state.Direction;
+import main.java.avs.aldricvs.node.state.State;
 
 public class NodeImpl implements Node {
 
